@@ -94,6 +94,7 @@ namespace Tapu_Yonetim_Sistemi.app
             this.txtAdSoyad.Name = "txtAdSoyad";
             this.txtAdSoyad.Size = new System.Drawing.Size(233, 36);
             this.txtAdSoyad.TabIndex = 1;
+            this.txtAdSoyad.TextChanged += new System.EventHandler(this.txtAdSoyad_TextChanged);
             // 
             // label2
             // 

@@ -119,9 +119,6 @@ namespace Tapu_Yonetim_Sistemi.app
             this.label16 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.rENKLERToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tAPUEVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kAYITLIEMLAKToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.maviToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sarıToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pembeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -129,7 +126,10 @@ namespace Tapu_Yonetim_Sistemi.app
             this.griToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yeşilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kahverengiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tAPUEVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.kAYITLIEMLAKToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.çIKIŞToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.tblArsaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tapuVeriTabaniDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -581,6 +581,7 @@ namespace Tapu_Yonetim_Sistemi.app
             this.txtMahalle.Name = "txtMahalle";
             this.txtMahalle.Size = new System.Drawing.Size(155, 36);
             this.txtMahalle.TabIndex = 27;
+            this.txtMahalle.TextChanged += new System.EventHandler(this.txtMahalle_TextChanged);
             // 
             // txtYuzOl
             // 
@@ -649,6 +650,7 @@ namespace Tapu_Yonetim_Sistemi.app
             this.txtCaddeS.Name = "txtCaddeS";
             this.txtCaddeS.Size = new System.Drawing.Size(155, 36);
             this.txtCaddeS.TabIndex = 15;
+            this.txtCaddeS.TextChanged += new System.EventHandler(this.txtCaddeS_TextChanged);
             // 
             // label14
             // 
@@ -785,6 +787,7 @@ namespace Tapu_Yonetim_Sistemi.app
             this.txtMAdSoyad.Name = "txtMAdSoyad";
             this.txtMAdSoyad.Size = new System.Drawing.Size(158, 36);
             this.txtMAdSoyad.TabIndex = 3;
+            this.txtMAdSoyad.TextChanged += new System.EventHandler(this.txtMAdSoyad_TextChanged);
             // 
             // groupBox2
             // 
@@ -813,6 +816,7 @@ namespace Tapu_Yonetim_Sistemi.app
             this.txtAAdaSoyad.Name = "txtAAdaSoyad";
             this.txtAAdaSoyad.Size = new System.Drawing.Size(158, 36);
             this.txtAAdaSoyad.TabIndex = 6;
+            this.txtAAdaSoyad.TextChanged += new System.EventHandler(this.txtAAdaSoyad_TextChanged);
             // 
             // illerTableAdapter
             // 
@@ -921,6 +925,55 @@ namespace Tapu_Yonetim_Sistemi.app
             this.rENKLERToolStripMenuItem.Size = new System.Drawing.Size(125, 33);
             this.rENKLERToolStripMenuItem.Text = "RENKLER";
             // 
+            // maviToolStripMenuItem
+            // 
+            this.maviToolStripMenuItem.Name = "maviToolStripMenuItem";
+            this.maviToolStripMenuItem.Size = new System.Drawing.Size(216, 34);
+            this.maviToolStripMenuItem.Text = "Mavi";
+            this.maviToolStripMenuItem.Click += new System.EventHandler(this.maviToolStripMenuItem_Click);
+            // 
+            // sarıToolStripMenuItem
+            // 
+            this.sarıToolStripMenuItem.Name = "sarıToolStripMenuItem";
+            this.sarıToolStripMenuItem.Size = new System.Drawing.Size(216, 34);
+            this.sarıToolStripMenuItem.Text = "Sarı";
+            this.sarıToolStripMenuItem.Click += new System.EventHandler(this.sarıToolStripMenuItem_Click_1);
+            // 
+            // pembeToolStripMenuItem
+            // 
+            this.pembeToolStripMenuItem.Name = "pembeToolStripMenuItem";
+            this.pembeToolStripMenuItem.Size = new System.Drawing.Size(216, 34);
+            this.pembeToolStripMenuItem.Text = "Pembe";
+            this.pembeToolStripMenuItem.Click += new System.EventHandler(this.pembeToolStripMenuItem_Click_1);
+            // 
+            // kırmızıToolStripMenuItem
+            // 
+            this.kırmızıToolStripMenuItem.Name = "kırmızıToolStripMenuItem";
+            this.kırmızıToolStripMenuItem.Size = new System.Drawing.Size(216, 34);
+            this.kırmızıToolStripMenuItem.Text = "Kırmızı";
+            this.kırmızıToolStripMenuItem.Click += new System.EventHandler(this.kırmızıToolStripMenuItem_Click_1);
+            // 
+            // griToolStripMenuItem
+            // 
+            this.griToolStripMenuItem.Name = "griToolStripMenuItem";
+            this.griToolStripMenuItem.Size = new System.Drawing.Size(216, 34);
+            this.griToolStripMenuItem.Text = "Gri";
+            this.griToolStripMenuItem.Click += new System.EventHandler(this.griToolStripMenuItem_Click_1);
+            // 
+            // yeşilToolStripMenuItem
+            // 
+            this.yeşilToolStripMenuItem.Name = "yeşilToolStripMenuItem";
+            this.yeşilToolStripMenuItem.Size = new System.Drawing.Size(216, 34);
+            this.yeşilToolStripMenuItem.Text = "Yeşil";
+            this.yeşilToolStripMenuItem.Click += new System.EventHandler(this.yeşilToolStripMenuItem_Click_1);
+            // 
+            // kahverengiToolStripMenuItem
+            // 
+            this.kahverengiToolStripMenuItem.Name = "kahverengiToolStripMenuItem";
+            this.kahverengiToolStripMenuItem.Size = new System.Drawing.Size(216, 34);
+            this.kahverengiToolStripMenuItem.Text = "Kahverengi";
+            this.kahverengiToolStripMenuItem.Click += new System.EventHandler(this.kahverengiToolStripMenuItem_Click);
+            // 
             // tAPUEVToolStripMenuItem
             // 
             this.tAPUEVToolStripMenuItem.Name = "tAPUEVToolStripMenuItem";
@@ -935,61 +988,6 @@ namespace Tapu_Yonetim_Sistemi.app
             this.kAYITLIEMLAKToolStripMenuItem.Text = "KAYITLI EMLAK";
             this.kAYITLIEMLAKToolStripMenuItem.Click += new System.EventHandler(this.kAYITLIEMLAKToolStripMenuItem_Click_1);
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
-            // maviToolStripMenuItem
-            // 
-            this.maviToolStripMenuItem.Name = "maviToolStripMenuItem";
-            this.maviToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
-            this.maviToolStripMenuItem.Text = "Mavi";
-            this.maviToolStripMenuItem.Click += new System.EventHandler(this.maviToolStripMenuItem_Click);
-            // 
-            // sarıToolStripMenuItem
-            // 
-            this.sarıToolStripMenuItem.Name = "sarıToolStripMenuItem";
-            this.sarıToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
-            this.sarıToolStripMenuItem.Text = "Sarı";
-            this.sarıToolStripMenuItem.Click += new System.EventHandler(this.sarıToolStripMenuItem_Click_1);
-            // 
-            // pembeToolStripMenuItem
-            // 
-            this.pembeToolStripMenuItem.Name = "pembeToolStripMenuItem";
-            this.pembeToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
-            this.pembeToolStripMenuItem.Text = "Pembe";
-            this.pembeToolStripMenuItem.Click += new System.EventHandler(this.pembeToolStripMenuItem_Click_1);
-            // 
-            // kırmızıToolStripMenuItem
-            // 
-            this.kırmızıToolStripMenuItem.Name = "kırmızıToolStripMenuItem";
-            this.kırmızıToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
-            this.kırmızıToolStripMenuItem.Text = "Kırmızı";
-            this.kırmızıToolStripMenuItem.Click += new System.EventHandler(this.kırmızıToolStripMenuItem_Click_1);
-            // 
-            // griToolStripMenuItem
-            // 
-            this.griToolStripMenuItem.Name = "griToolStripMenuItem";
-            this.griToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
-            this.griToolStripMenuItem.Text = "Gri";
-            this.griToolStripMenuItem.Click += new System.EventHandler(this.griToolStripMenuItem_Click_1);
-            // 
-            // yeşilToolStripMenuItem
-            // 
-            this.yeşilToolStripMenuItem.Name = "yeşilToolStripMenuItem";
-            this.yeşilToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
-            this.yeşilToolStripMenuItem.Text = "Yeşil";
-            this.yeşilToolStripMenuItem.Click += new System.EventHandler(this.yeşilToolStripMenuItem_Click_1);
-            // 
-            // kahverengiToolStripMenuItem
-            // 
-            this.kahverengiToolStripMenuItem.Name = "kahverengiToolStripMenuItem";
-            this.kahverengiToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
-            this.kahverengiToolStripMenuItem.Text = "Kahverengi";
-            this.kahverengiToolStripMenuItem.Click += new System.EventHandler(this.kahverengiToolStripMenuItem_Click);
-            // 
             // çIKIŞToolStripMenuItem
             // 
             this.çIKIŞToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("çIKIŞToolStripMenuItem.Image")));
@@ -997,6 +995,12 @@ namespace Tapu_Yonetim_Sistemi.app
             this.çIKIŞToolStripMenuItem.Size = new System.Drawing.Size(101, 33);
             this.çIKIŞToolStripMenuItem.Text = "ÇIKIŞ";
             this.çIKIŞToolStripMenuItem.Click += new System.EventHandler(this.çIKIŞToolStripMenuItem_Click);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // frmArsa
             // 

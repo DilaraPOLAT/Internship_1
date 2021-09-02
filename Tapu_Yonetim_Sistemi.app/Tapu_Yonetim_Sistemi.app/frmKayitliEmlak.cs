@@ -230,6 +230,12 @@ namespace Tapu_Yonetim_Sistemi.app
         {
             Application.Exit();
         }
+
+        private void txtAdSoyad_TextChanged(object sender, EventArgs e)
+        {
+            txtAdSoyad.Text = txtAdSoyad.Text.ToUpper();
+            txtAdSoyad.SelectionStart = txtAdSoyad.Text.Length;
+        }
     }
     public class Arsa
     {

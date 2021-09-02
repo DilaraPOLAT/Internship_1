@@ -229,6 +229,7 @@ namespace Tapu_Yonetim_Sistemi.app
             this.txtMAdSoyad.Name = "txtMAdSoyad";
             this.txtMAdSoyad.Size = new System.Drawing.Size(170, 36);
             this.txtMAdSoyad.TabIndex = 3;
+            this.txtMAdSoyad.TextChanged += new System.EventHandler(this.txtMAdSoyad_TextChanged);
             // 
             // groupBox2
             // 
@@ -257,6 +258,7 @@ namespace Tapu_Yonetim_Sistemi.app
             this.txtAAdSoyad.Name = "txtAAdSoyad";
             this.txtAAdSoyad.Size = new System.Drawing.Size(170, 36);
             this.txtAAdSoyad.TabIndex = 7;
+            this.txtAAdSoyad.TextChanged += new System.EventHandler(this.txtAAdSoyad_TextChanged);
             // 
             // label7
             // 
@@ -382,6 +384,7 @@ namespace Tapu_Yonetim_Sistemi.app
             this.txtBlok.Name = "txtBlok";
             this.txtBlok.Size = new System.Drawing.Size(173, 36);
             this.txtBlok.TabIndex = 22;
+            this.txtBlok.TextChanged += new System.EventHandler(this.txtBlok_TextChanged);
             // 
             // cmb_ilce
             // 
@@ -452,6 +455,7 @@ namespace Tapu_Yonetim_Sistemi.app
             this.txtCadde.Name = "txtCadde";
             this.txtCadde.Size = new System.Drawing.Size(173, 36);
             this.txtCadde.TabIndex = 15;
+            this.txtCadde.TextChanged += new System.EventHandler(this.txtCadde_TextChanged);
             // 
             // txtMahalle
             // 
@@ -459,6 +463,7 @@ namespace Tapu_Yonetim_Sistemi.app
             this.txtMahalle.Name = "txtMahalle";
             this.txtMahalle.Size = new System.Drawing.Size(173, 36);
             this.txtMahalle.TabIndex = 14;
+            this.txtMahalle.TextChanged += new System.EventHandler(this.txtMahalle_TextChanged);
             // 
             // label14
             // 

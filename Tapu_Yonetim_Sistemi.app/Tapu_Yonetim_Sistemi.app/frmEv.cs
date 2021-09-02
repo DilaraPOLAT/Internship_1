@@ -251,5 +251,35 @@ namespace Tapu_Yonetim_Sistemi.app
             mskATelNo.Text = dataGridView1.Rows[secilen].Cells[13].Value.ToString();
            mskUcret.Text = dataGridView1.Rows[secilen].Cells[14].Value.ToString();
         }
+
+        private void txtMAdSoyad_TextChanged(object sender, EventArgs e)
+        {
+            txtMAdSoyad.Text = txtMAdSoyad.Text.ToUpper();
+            txtMAdSoyad.SelectionStart = txtMAdSoyad.Text.Length;
+        }
+
+        private void txtAAdSoyad_TextChanged(object sender, EventArgs e)
+        {
+            txtAAdSoyad.Text = txtAAdSoyad.Text.ToUpper();
+            txtAAdSoyad.SelectionStart = txtAAdSoyad.Text.Length;
+        }
+
+        private void txtMahalle_TextChanged(object sender, EventArgs e)
+        {
+            txtMahalle.Text = txtMahalle.Text.ToUpper();
+            txtMahalle.SelectionStart = txtMahalle.Text.Length;
+        }
+
+        private void txtCadde_TextChanged(object sender, EventArgs e)
+        {
+            txtCadde.Text = txtCadde.Text.ToUpper();
+            txtCadde.SelectionStart = txtCadde.Text.Length;
+        }
+
+        private void txtBlok_TextChanged(object sender, EventArgs e)
+        {
+            txtBlok.Text = txtBlok.Text.ToUpper();
+            txtBlok.SelectionStart = txtBlok.Text.Length;
+        }
     }
 }

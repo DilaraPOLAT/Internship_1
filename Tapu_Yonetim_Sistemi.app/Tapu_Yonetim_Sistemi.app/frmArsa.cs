@@ -249,5 +249,29 @@ namespace Tapu_Yonetim_Sistemi.app
         {
             Application.Exit();
         }
+
+        private void txtMAdSoyad_TextChanged(object sender, EventArgs e)
+        {
+            txtMAdSoyad.Text = txtMAdSoyad.Text.ToUpper();
+            txtMAdSoyad.SelectionStart = txtMAdSoyad.Text.Length;
+        }
+
+        private void txtAAdaSoyad_TextChanged(object sender, EventArgs e)
+        {
+            txtAAdaSoyad.Text = txtAAdaSoyad.Text.ToUpper();
+            txtAAdaSoyad.SelectionStart = txtAAdaSoyad.Text.Length;
+        }
+
+        private void txtMahalle_TextChanged(object sender, EventArgs e)
+        {
+            txtMahalle.Text = txtMahalle.Text.ToUpper();
+            txtMahalle.SelectionStart = txtMahalle.Text.Length;
+        }
+
+        private void txtCaddeS_TextChanged(object sender, EventArgs e)
+        {
+            txtCaddeS.Text = txtCaddeS.Text.ToUpper();
+            txtCaddeS.SelectionStart = txtCaddeS.Text.Length;
+        }
     }
 }
