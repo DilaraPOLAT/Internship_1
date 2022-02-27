@@ -11,7 +11,7 @@
 # 1.Project(Municipalty(Belediye))
 ***ER Diyagramı***
 ![ER](https://user-images.githubusercontent.com/59871974/155895903-2fca7c99-99db-4213-a549-1b49ee0db4a5.png)
-***Communication(iletişim) entity**
+***Communication(iletişim) entity***
 ![image](https://user-images.githubusercontent.com/59871974/155896287-017afb88-dce4-4676-9e0b-cee66ae35fc1.png)
 ***GetAll ile veri tabanındaki communication tablosunu listeledim***
 ![image](https://user-images.githubusercontent.com/59871974/155896303-505f98ee-c44a-4463-80ad-2aa0717972d4.png)
@@ -24,6 +24,21 @@
 
 ***PostgreSQL veri tabanında communication tablosunda başarılyla id=3 verisi silindi***
 ![image](https://user-images.githubusercontent.com/59871974/155896461-62cb5b1d-7064-42ce-863f-c253a4b00338.png)
+***project entity***
+![image](https://user-images.githubusercontent.com/59871974/155896885-9765245a-7e8f-4d0f-a47f-7a02fc6e769e.png)
+![image](https://user-images.githubusercontent.com/59871974/155896890-2f8fec82-57fe-4018-992b-5ee44c13101d.png)
+![image](https://user-images.githubusercontent.com/59871974/155896895-ee069db6-14c5-4047-a2e6-580e1f3569ae.png)
+
+***PostegreSQL project tablosundaki veriler***
+
+![image](https://user-images.githubusercontent.com/59871974/155896903-66c6ba30-dfe5-4a4b-8965-998339750aeb.png)
+
+***Update işlemi gerçekleştirildi***
+
+![image](https://user-images.githubusercontent.com/59871974/155896923-9fedf021-3410-4976-8b33-5fea0a2495b6.png)
+
+***Update işleminden sonra veri tabanında project tablosu***
+![image](https://user-images.githubusercontent.com/59871974/155896944-e5c13dc3-4d1d-4fff-bb8d-b2bdbedeccd3.png)
 
 ![image](https://user-images.githubusercontent.com/59871974/155896536-c4155296-b732-45e1-9498-74f93e8d915a.png)
 ![image](https://user-images.githubusercontent.com/59871974/155896543-fcb7dbc8-567b-4a9d-af2e-29694c82401a.png)
