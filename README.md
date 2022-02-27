@@ -1,2 +1,4 @@
 # Internship_1
-# <code><img height="75" src="![Uploading image.png…]()"></code>
+# Used Technologies
+![download](![image](https://user-images.githubusercontent.com/59871974/155895769-456a3a2c-a8b0-4ccb-a558-c21ef902d716.png))
+
